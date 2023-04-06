@@ -1,0 +1,81 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Georgia, 'Times New Roman', Times, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #0094ff;
+}
+
+.game {
+    width: 75vmin;
+    height: 80vmin;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    background: #808080;
+    box-shadow: 0 20px 40px rgba(40,40,120,0.5);
+    border-radius: 8px;
+}
+
+.info-joueurs{
+    color:rgba(40,40,120,0.5);
+    font-weight:400;
+    font-size:1.2rem;
+    padding:20px 25px;
+    display:flex;
+    justify-content:space-between;
+}
+.surface-jeu{
+    height:95%;
+    width:100%;
+    display:grid;
+    background:rgba(40,40,130,0.5);
+    grid-template:repeat(30,1fr)/repeat(30,1fr);
+}
+.surface-jeu .pommes{
+    background:#ff0000; 
+}
+
+.surface-jeu .serpent{
+    background:#29bd1e
+}
+.controles {
+    display: none;
+    justify-content:space-between 
+}
+
+.controles i{
+    font-size: 1.3rem;
+    color: rgba(40,40,120,0.5);
+    padding:25px 0;
+    width:calc(100%/4);
+    cursor:pointer;
+    border-right:1px solid #000000;
+}
+
+@media screen and (max-width: 800px){
+    .game{
+        width:90vmin;
+        height:100vmin;
+
+    }
+    .info-joueurs{
+        font-size:1rem;
+        padding:15px 25px;
+    }
+    .controles{
+        display:flex;
+    }
+    .controles i{
+        font-size:1rem;
+        padding:15px 0;
+    }
+}
