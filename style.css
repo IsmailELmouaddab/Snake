@@ -1,4 +1,5 @@
-﻿* {
+﻿
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -42,27 +43,28 @@ body {
     grid-template: repeat(30, 1fr)/repeat(30, 1fr);
 }
 
-    .surface-jeu .pommes {
+.surface-jeu .pommes {
         background: #ff0000;
-    }
+}
 
-    .surface-jeu .serpent {
+.surface-jeu .serpent {
         background: #29bd1e;
-    }
+}
 
 .controles {
     display: none;
     justify-content: space-between;
 }
 
-    .controles i {
+.controles i {
         font-size: 1.3rem;
         color: rgba(40, 40, 120, 0.5);
         padding: 25px 0;
-        width: calc(100%/4);
+        width: calc(100% / 4);
         cursor: pointer;
         border-right: 1px solid #000000;
-    }
+        text-align:center;
+}
 
 @media screen and (max-width: 800px) {
     .game {
@@ -79,8 +81,8 @@ body {
         display: flex;
     }
 
-        .controles i {
-            font-size: 1rem;
-            padding: 15px 0;
-        }
+    .controles i {
+        font-size: 1rem;
+        padding: 15px 0;
+    }
 }

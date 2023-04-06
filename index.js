@@ -1,8 +1,7 @@
-// JavaScript source code
 const surfaceJeu = document.querySelector(".surface-jeu");
 const scoreElement = document.querySelector(".score");
 const recordElement = document.querySelector(".Record");
-const controles = document.querySelector(".controles i");
+const controles = document.querySelectorAll(".controles i");
 
 let serpentX = 5, serpentY = 5;
 let finJeu = false;
@@ -65,7 +64,7 @@ const initJeu = () => {
 
     corpsSerpent[0] = [serpentX, serpentY];
     if (serpentX <= 0 || serpentX > 30 || serpentY <= 0 || serpentY > 30) {
-        finJeu = true;
+        return finJeu = true;
     }
 
     for (let i = 0; i < corpsSerpent.length; i++) {
